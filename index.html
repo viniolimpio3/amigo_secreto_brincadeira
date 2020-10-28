@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LUAN AMIGO SECRETO IBJM</title>
+
+        <!-- DICA: -->
+        <style>
+            body{
+                background-color: #222;
+                color: #fff;
+                font-weight: bold;
+            }
+            button{
+                background-color: red;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: green;
+                color: white;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1 id="h1">LUAN, APRENDE A ESCREVER O NOME DAS PESSOAS TIW!</h1>
+
+        <button id="btn">CLIQUE AQUI PARA SABER QUEM ENVIOU ISSO</button>
+
+        <div id="h" hidden>
+            <h3>"é uma dessas pessoas que te tirou, espero ter ajudado":</h3>
+            <h4>TROLEEEEEI :v</h4>
+            <img width="100%" src="./img.jpeg" title="seu amigo secreto LUAN">
+        </div>
+    </body>
+</html>
+<script>
+            
+    const div = document.getElementById('h')
+    let isActived = false
+    const h1 = document.getElementById('h1')
+    const btn = document.getElementById('btn')
+
+    btn.onclick = function(){
+        if(!isActived){
+            console.log('a')
+            div.removeAttribute('hidden')
+            isActived = true
+            btn.innerHTML = 'Voltar'
+        }else{
+            div.setAttribute('hidden', '')
+            isActived = false
+            btn.innerHTML = 'CLIQUE AQUI PARA SABER QUEM ENVIOU ISSO'
+        }
+    }
+</script>
